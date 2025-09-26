@@ -1,0 +1,80 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Index.tsx",
+  "homepage": "",
+  "scripts": {
+    "dev": "webpack serve --node-env=development",
+    "build-dev": "webpack",
+    "build-prod": "webpack --node-env=production",
+    "clear": "rm -dr bundle",
+    "deploy": "gh-pages -d bundle",
+    "lint": "eslint \"**/*.{ts,tsx,js,jsx}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "@eslint/js": "^9.36.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.1",
+    "@reduxjs/toolkit": "^2.9.0",
+    "@types/lodash": "^4.17.20",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "axios": "^1.12.2",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "dotenv-webpack": "^8.1.1",
+    "eslint": "^9.36.0",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "gh-pages": "^6.3.0",
+    "globals": "^16.4.0",
+    "history": "^5.3.0",
+    "html-webpack-plugin": "^5.6.4",
+    "image-webpack-loader": "^8.1.0",
+    "lint-staged": "^16.2.1",
+    "lodash": "^4.17.21",
+    "mini-css-extract-plugin": "^2.9.4",
+    "postcss": "^8.5.6",
+    "postcss-loader": "^8.2.0",
+    "postcss-preset-env": "^10.4.0",
+    "prettier": "3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-hook-form": "^7.63.0",
+    "react-redux": "^9.2.0",
+    "react-refresh": "^0.17.0",
+    "react-router": "^7.9.2",
+    "react-router-dom": "^7.9.2",
+    "sass": "^1.93.2",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.44.1",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md,scss}": [
+      "prettier --write"
+    ]
+  }
+}
