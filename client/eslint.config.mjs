@@ -43,6 +43,7 @@ export default defineConfig([
 				'warn',
 				{
 					groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+					'newlines-between': 'always',
 					pathGroups: [
 						{
 							pattern: 'react',
