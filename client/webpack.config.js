@@ -16,21 +16,21 @@ module.exports = {
     cache: {
         type: 'filesystem',
     },
-    entry: [path.resolve(__dirname, './client/src/Index.tsx')],
+    entry: [path.resolve(__dirname, 'src/Index.tsx')],
     resolve: {
         extensions: ['.tsx', '.ts', '.js', '.jsx'],
         alias: {
-            '@': path.resolve(__dirname, 'client/src/'),
-            '@/app': path.resolve(__dirname, 'client/src/app/'),
-            '@/pages': path.resolve(__dirname, 'client/src/pages/'),
-            '@/widgets': path.resolve(__dirname, 'client/src/widgets/'),
-            '@/features': path.resolve(__dirname, 'client/src/features/'),
-            '@/entities': path.resolve(__dirname, 'client/src/entities/'),
-            '@/shared': path.resolve(__dirname, 'client/src/shared/'),
+            '@': path.resolve(__dirname, 'src/'),
+            '@/app': path.resolve(__dirname, 'src/app/'),
+            '@/pages': path.resolve(__dirname, 'src/pages/'),
+            '@/widgets': path.resolve(__dirname, 'src/widgets/'),
+            '@/features': path.resolve(__dirname, 'src/features/'),
+            '@/entities': path.resolve(__dirname, 'src/entities/'),
+            '@/shared': path.resolve(__dirname, 'src/shared/'),
         },
     },
     output: {
-        path: path.resolve(__dirname, './bundle'),
+        path: path.resolve(__dirname, '../bundle'),
         clean: true,
         filename: 'bundle.[contenthash].js',
         assetModuleFilename: 'assets/[hash][ext][query]',
@@ -48,7 +48,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, './client/public/index.html'),
+            template: path.resolve(__dirname, 'public/index.html'),
             minify: true,
         }),
         new MiniCssExtractPlugin({

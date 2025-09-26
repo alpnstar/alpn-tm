@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62748103-06f4-4981-9baf-2a41b57c8592" name="Changes" comment="" />
+    <list default="true" id="62748103-06f4-4981-9baf-2a41b57c8592" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.husky/pre-commit" beforeDir="false" afterPath="$PROJECT_DIR$/.husky/pre-commit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/webpack.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +66,7 @@
       <updated>1758858101941</updated>
       <workItem from="1758858103072" duration="1338000" />
       <workItem from="1758859572556" duration="7000" />
-      <workItem from="1758919116714" duration="302000" />
+      <workItem from="1758919116714" duration="965000" />
     </task>
     <servers />
   </component>
