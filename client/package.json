@@ -10,7 +10,8 @@
     "build-prod": "webpack --node-env=production",
     "clear": "rm -dr bundle",
     "deploy": "gh-pages -d bundle",
-    "lint": "eslint \"**/*.{ts,tsx,js,jsx}\""
+    "lint": "eslint \"**/*.{ts,tsx,js,jsx}\"",
+    "generate": "node scripts/generate.js"
   },
   "keywords": [],
   "author": "",
